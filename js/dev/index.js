@@ -7898,6 +7898,7 @@ function gsapInit() {
 }
 document.querySelector("[data-fls-anim-clouds]") ? window.addEventListener("load", gsapInit) : null;
 const lenis = new Lenis();
+lenis.on("scroll", ScrollTrigger.update);
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
