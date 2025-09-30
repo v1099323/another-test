@@ -7913,33 +7913,36 @@ document.addEventListener("DOMContentLoaded", function() {
   const volumeUpButton = document.querySelector(".hero__volume-up-container");
   if (!video || !volumeUpButton) return;
   function updateButtonVisibility() {
-    if (!video.error && video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+    if (!video.error && video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA && video.muted) {
       volumeUpButton.style.display = "";
     } else {
       volumeUpButton.style.display = "none";
     }
   }
-  video.addEventListener("loadeddata", updateButtonVisibility);
-  video.addEventListener("canplay", updateButtonVisibility);
-  video.addEventListener("canplaythrough", updateButtonVisibility);
-  video.addEventListener("playing", updateButtonVisibility);
-  video.addEventListener("error", updateButtonVisibility);
-  video.addEventListener("emptied", updateButtonVisibility);
-  video.addEventListener("stalled", updateButtonVisibility);
-  updateButtonVisibility();
   video.play().catch(() => {
   });
   function unmuteVideo() {
     if (!video) return;
     video.muted = false;
-    video.controls = true;
     video.volume = 1;
+    video.controls = true;
     video.classList.add("player-not-muted");
-    volumeUpButton.style.display = "none";
     if (video.paused) {
       video.play().catch(() => {
       });
     }
+    volumeUpButton.style.display = "none";
+    video.removeEventListener("loadeddata", updateButtonVisibility);
+    video.removeEventListener("canplay", updateButtonVisibility);
+    video.removeEventListener("canplaythrough", updateButtonVisibility);
+    video.removeEventListener("playing", updateButtonVisibility);
+    video.removeEventListener("stalled", updateButtonVisibility);
   }
   volumeUpButton.addEventListener("click", unmuteVideo);
+  video.addEventListener("loadeddata", updateButtonVisibility);
+  video.addEventListener("canplay", updateButtonVisibility);
+  video.addEventListener("canplaythrough", updateButtonVisibility);
+  video.addEventListener("playing", updateButtonVisibility);
+  video.addEventListener("stalled", updateButtonVisibility);
+  updateButtonVisibility();
 });
