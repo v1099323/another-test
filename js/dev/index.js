@@ -7877,7 +7877,7 @@ function gsapInit() {
     el.style.willChange = "opacity, transform";
     gsapWithCSS.fromTo(
       el,
-      { opacity: 0, y: 20, scale: 0.85 },
+      { opacity: 0, y: 20, scale: 0.9 },
       {
         opacity: 1,
         scale: 1,
@@ -7911,7 +7911,18 @@ requestAnimationFrame(raf);
 document.addEventListener("DOMContentLoaded", function() {
   const video = document.querySelector(".hero__video");
   const volumeUpButton = document.querySelector(".hero__volume-up-container");
-  if (!video) return;
+  function hideButtonIfVideoNotLoaded() {
+    if (video.readyState < 1 || video.networkState === 3) {
+      volumeUpButton.style.display = "none";
+    }
+  }
+  video.addEventListener("error", hideButtonIfVideoNotLoaded);
+  video.addEventListener("emptied", hideButtonIfVideoNotLoaded);
+  if (video.readyState < 1 || video.networkState === 3) {
+    volumeUpButton.style.display = "none";
+  }
+  video.play().catch(() => {
+  });
   function unmuteVideo() {
     if (!video) return;
     video.muted = false;
