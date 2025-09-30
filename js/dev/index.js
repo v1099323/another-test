@@ -7874,6 +7874,7 @@ gsapWithCSS.registerPlugin(ScrollTrigger);
 function gsapInit() {
   const clouds = document.querySelectorAll("[data-fls-anim-clouds]");
   clouds.forEach((el) => {
+    el.style.willChange = "opacity, transform";
     gsapWithCSS.fromTo(
       el,
       { opacity: 0, y: 20, scale: 0.85 },
@@ -7891,6 +7892,9 @@ function gsapInit() {
           // markers: true,
           // once: true,
           // toggleActions: 'play none none none',
+        },
+        onComplete: () => {
+          el.style.willChange = "";
         }
       }
     );
