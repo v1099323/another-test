@@ -7911,16 +7911,22 @@ requestAnimationFrame(raf);
 document.addEventListener("DOMContentLoaded", function() {
   const video = document.querySelector(".hero__video");
   const volumeUpButton = document.querySelector(".hero__volume-up-container");
-  function hideButtonIfVideoNotLoaded() {
-    if (video.readyState < 1 || video.networkState === 3) {
+  if (!video || !volumeUpButton) return;
+  function updateButtonVisibility() {
+    if (!video.error && video.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+      volumeUpButton.style.display = "";
+    } else {
       volumeUpButton.style.display = "none";
     }
   }
-  video.addEventListener("error", hideButtonIfVideoNotLoaded);
-  video.addEventListener("emptied", hideButtonIfVideoNotLoaded);
-  if (video.readyState < 1 || video.networkState === 3) {
-    volumeUpButton.style.display = "none";
-  }
+  video.addEventListener("loadeddata", updateButtonVisibility);
+  video.addEventListener("canplay", updateButtonVisibility);
+  video.addEventListener("canplaythrough", updateButtonVisibility);
+  video.addEventListener("playing", updateButtonVisibility);
+  video.addEventListener("error", updateButtonVisibility);
+  video.addEventListener("emptied", updateButtonVisibility);
+  video.addEventListener("stalled", updateButtonVisibility);
+  updateButtonVisibility();
   video.play().catch(() => {
   });
   function unmuteVideo() {
@@ -7931,7 +7937,8 @@ document.addEventListener("DOMContentLoaded", function() {
     video.classList.add("player-not-muted");
     volumeUpButton.style.display = "none";
     if (video.paused) {
-      video.play();
+      video.play().catch(() => {
+      });
     }
   }
   volumeUpButton.addEventListener("click", unmuteVideo);
