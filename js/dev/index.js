@@ -6819,7 +6819,7 @@ function gsapInit() {
         opacity: 1,
         scale: 1,
         y: 0,
-        duration: 1,
+        duration: 0.3,
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
