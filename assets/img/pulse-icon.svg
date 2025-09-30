@@ -1,0 +1,35 @@
+<svg
+	class="pulse-slow"
+	width="1.25rem"
+	height="1.25rem"
+	viewBox="0 0 23 23"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<rect
+		x="2.64648"
+		y="2.64624"
+		width="17.7073"
+		height="17.7073"
+		rx="8.85366"
+		fill="#EA2222"
+		fill-opacity="0.31"
+	></rect>
+	<rect
+		x="0.5"
+		y="0.5"
+		width="22"
+		height="22"
+		rx="11"
+		fill="#EA2222"
+		fill-opacity="0.15"
+	></rect>
+	<rect
+		x="7.47656"
+		y="7.47559"
+		width="8.04878"
+		height="8.04878"
+		rx="4.02439"
+		fill="#F12800"
+	></rect>
+</svg>
