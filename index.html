@@ -3,18 +3,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="preload" href="./assets/fonts/BoldCrayola-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Medium-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Bold-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Black-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1759228213424"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759228213424">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1759672794895"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759672794895">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header data-fls-header="" data-fls-header-scroll="" class="header">
 				<div class="header__container">
 					<div class="header__logo">
-						<a href="#" data-fls-scrollto=".page--home" data-fls-scrollto-header="">Logo</a>
+						<a href="#" data-fls-scrollto=".page--home" data-fls-scrollto-header="">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/logo-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/logo-1200.webp" type="image/webp">
+								<img alt="Logo" src="./assets/img/logo.webp">
+							</picture>
+						</a>
 					</div>
 					<div class="header__menu menu">
 						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
@@ -23,71 +38,38 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a class="menu__link menu__link--active" href="#" data-fls-scrollto=".scroll-01" data-fls-scrollto-top="180">Home</a>
+									<a class="menu__link" href="#" data-fls-scrollto=".how" data-fls-scrollto-top="180">О программе</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#" data-fls-scrollto=".scroll-02" data-fls-scrollto-top="180">About</a>
+									<a class="menu__link" href="#" data-fls-scrollto=".whynow" data-fls-scrollto-top="180">Как работает</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#" data-fls-scrollto=".scroll-03" data-fls-scrollto-top="180">Services</a>
+									<a class="menu__link" href="#" data-fls-scrollto=".prices" data-fls-scrollto-top="180">Тарифы</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#" data-fls-scrollto=".scroll-04" data-fls-scrollto-top="180">Portfolio</a>
+									<a class="menu__link" href="#" data-fls-scrollto=".rewiews" data-fls-scrollto-top="180">Отзывы</a>
 								</li>
 								<li class="menu__item">
-									<a class="menu__link" href="#" data-fls-scrollto=".scroll-05" data-fls-scrollto-top="180">Testimonials</a>
+									<a class="menu__link" href="#" data-fls-scrollto=".questions" data-fls-scrollto-top="180">Вопросы</a>
+								</li>
+								<li class="menu__item">
+									<a class="menu__link" href="#" data-fls-scrollto=".fast" data-fls-scrollto-top="180">Оплатить</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 					<!--
-<fetch url="@components/layout/menu/menu.js?v=1759228213424on">
+<fetch url="@components/layout/menu/menu.js?v=1759672794895on">
 <each loop='item in response'>
 </each>
 </fetch>
 -->
+					<!-- О программе | Как работает | Тарифы | Отзывы | FAQ | Оплатить -->
 				</div>
 			</header>
-			<main class="page page--home" data-fls-gsap="">
+			<main class="page page--home">
 				<section class="hero">
 					<div class="hero__container">
-						<div class="hero__inner">
-							<div class="hero__title">
-								Introducing The Scale
-								<span class="hero__title--accent">2.0</span>
-								System That Has Helped
-					DOZENS
-								<span class="hero__title--underline">Sign Paying</span>
-								<span class="hero__title--font">Freelance Brandscaling</span>
-								Clients
-							</div>
-							<div class="hero__subtitle">
-								<span class="hero__subtitle--strong">The</span>
-								<span class="hero__subtitle--bg hero__subtitle--white">step-by-step</span>
-								<span class="hero__subtitle--strong"></span>
-								blueprint that took me from broke
-								<span class="hero__subtitle--strong">small-town</span>
-								<span class="hero__subtitle--strong">kid to</span>
-								<span class="hero__subtitle--strong">millionaire at</span>
-								<span class="hero__subtitle--strong">age 20.</span>
-								<span class="hero__subtitle--strong">Make sure you</span>
-								<span class="hero__subtitle--bg hero__subtitle--orange">watch the video</span>
-							</div>
-							<div class="hero__limitedtime title-record__anim-container">
-								<div class="title-record__anim-inner">
-									<div class="title-record title-record--anim" data-fls-title-record="">
-										<div class="title-record__pulse-icon"></div>
-										<p class="title-record__text">LIMITED TIME OFFER</p>
-									</div>
-								</div>
-							</div>
-							<div class="hero__text">
-								<p>
-									scale
-									<span class="hero__text--accent">2.0</span>
-								</p>
-							</div>
-						</div>
 						<div class="hero__player">
 							<div class="hero__player-border">
 								<video class="hero__video" src="./assets/img/hero/hero-video.mp4" autoplay loop muted></video>
@@ -96,383 +78,537 @@
 								</div>
 							</div>
 						</div>
-						<button class="hero__button button" data-fls-button="">Get assess now</button>
-						<ul class="hero__items">
-							<li class="hero__item hero__item--icon hero__item--icon01">
-								<p>
-									<span class="hero__item--big">No</span>
-									Experience
-								</p>
-							</li>
-							<li class="hero__item hero__item--icon hero__item--icon02">
-								<p>
-									<span class="hero__item--big">No</span>
-									Capital
-								</p>
-							</li>
-							<li class="hero__item hero__item--icon hero__item--icon03">
-								<p>
-									No
-									<span class="hero__item--big">Crazy IQ</span>
-									Needed
-								</p>
-							</li>
-						</ul>
+						<div class="hero__inner">
+							<h1 class="hero__title sr-only"></h1>
+							<blockquote class="hero__blockquote">
+								Это первое обучение в СНГ по AI-моделям. Такого направления ещё никто
+					не показывал. Конкуренции нет. Я покажу, как с нуля создать систему,
+					которая работает на тебя каждый день — даже если у тебя нет опыта,
+					команды или больших вложений.
+							</blockquote>
+						</div>
+						<button class="hero__button button" data-fls-button="">Хочу систему</button>
 					</div>
 				</section>
-				<section class="daily scroll-01" data-fls-watcher="navigator">
-					<div class="daily__container">
-						<h2 class="daily__title">
-							You Are Watching It Happen
-							<span class="daily__title--accent">Daily</span>
-							. It’s Time For You To
-							<span class="daily__title--underline">Play The Game.</span>
+				<section class="create">
+					<div class="create__container">
+						<h2 class="create__title">
+							Пока весь рынок только спорит про AI — я создал систему, которая
+				приносит деньги каждый день.
 						</h2>
-						<div class="daily__text">
-							<p>You've been stuck in the same cycle for months (maybe years):</p>
-						</div>
-						<ul class="daily__items">
-							<li class="daily__item item-daily">
-								<div class="item-daily__icon item-daily__icon--01"></div>
-								<p class="item-daily__text">
-									Watching success stories while making
-									<span class="item-daily__text--strong">minimum wage</span>
-								</p>
-							</li>
-							<li class="daily__item item-daily">
-								<div class="item-daily__icon item-daily__icon--02"></div>
-								<p class="item-daily__text">
-									Trying dropshipping and
-									<span class="item-daily__text--strong">losing thousands</span>
-									on
-						failed products
-								</p>
-							</li>
-							<li class="daily__item item-daily">
-								<div class="item-daily__icon item-daily__icon--03"></div>
-								<p class="item-daily__text">
-									Gambling on crypto hoping for that
-									<span class="item-daily__text--strong">"one lucky break"</span>
-								</p>
-							</li>
-							<li class="daily__item item-daily">
-								<div class="item-daily__icon item-daily__icon--04"></div>
-								<p class="item-daily__text">
-									Working jobs that
-									<span class="item-daily__text--strong">barely cover your bills</span>
-									while your boss treats you like garbage
-								</p>
-							</li>
-							<li class="daily__item item-daily">
-								<div class="item-daily__icon item-daily__icon--05"></div>
-								<p class="item-daily__text">
-									<span class="item-daily__text--strong">Dreaming</span>
-									about cars,
-						freedom, and respect while
-									<span class="item-daily__text--strong">settling for weekend parties</span>
-									and
-									<span class="item-daily__text--strong">distractions</span>
-								</p>
-							</li>
-						</ul>
+						<h3 class="create__subtitle">
+							Тебе не нужно показывать своё лицо, собирать команду или вкладывать
+				тысячи долларов. Достаточно ноутбука и браузера.
+						</h3>
 					</div>
-				</section>
-				<section class="reality scroll-02" data-fls-watcher="navigator" data-fls-anim-clouds="">
-					<div class="reality__container">
-						<div class="reality__inner">
-							<h2 class="reality__title">THE HARSH REALITY</h2>
-							<div class="reality__text">
-								<span class="reality__text--strong"></span>
-								<p>
-									I talk to these
-									<span class="reality__text--strong">“successful”</span>
-									people you
-						guys see on the internet
-									<span class="reality__text--strong">daily.</span>
-								</p>
-								<p>
-									And the
-									<span class="reality__text--strong">the truth is</span>
-									is
-						that there is
-									<span class="reality__text--strong">nothing special about them.</span>
-								</p>
-								<p>
-									<span class="reality__text--strong">They don't</span>
-									have a crazy
-						IQ.
-									<span class="reality__text--strong">They don’t</span>
-									have some
-						special connections.
-									<span class="reality__text--strong">They didn’t</span>
-									start out
-						with a ton of money or rich parents.
-								</p>
-								<p>
-									<span class="reality__text--strong">Quite frankly I can’t believe that</span>
-									some of them got to where they are today. But there is one thing
-						myself and them do have in common:
-								</p>
-								<p>
-									<span class="reality__text--strong">We take action. That is the difference.</span>
-								</p>
-							</div>
-							<button class="reality__button button" data-fls-button="">take action</button>
-						</div>
-					</div>
-				</section>
-				<section class="main-guide scroll-03" data-fls-watcher="navigator">
-					<div class="main-guide__container">
-						<h2 class="main-guide__title">
-							The
-							<span class="main-guide__title--accent">4-Pillars</span>
-							of the
-				‍
-							<span class="main-guide__title--font">Scale 2.0</span>
-							System
-						</h2>
-						<div class="main-guide__title-record title-record" data-fls-title-record="">
-							<div class="title-record__pulse-icon"></div>
-							<p class="title-record__text">YOUR MAIN GUIDE</p>
-						</div>
-						<div class="main-guide__image">
+					<div class="create__marquee" data-fls-marquee="">
+						<div class="create__image">
 							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/main-guide/01-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/main-guide/01-1200.webp" type="image/webp">
-								<img class="main-guide__picture" src="./assets/img/main-guide/01.webp">
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-01-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-01-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-01" src="./assets/img/create/ai-model-01.webp">
 							</picture>
 						</div>
-						<div class="main-guide__items">
-							<div class="main-guide__item item-main-guide" data-fls-anim-clouds="">
-								<div class="item-main-guide__inner">
-									<div class="item-main-guide__icon item-main-guide__icon--01"></div>
-									<h3 class="item-main-guide__title">PILLAR 1: MINDSET MASTERY</h3>
-									<div class="item-main-guide__text">
-										<p>
-											Master your mind or it will master you. We reprogram the
-								limiting beliefs keeping you broke and install the millionaire
-								mindset that ALL successful people have achieved.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="main-guide__item item-main-guide" data-fls-anim-clouds="">
-								<div class="item-main-guide__inner">
-									<div class="item-main-guide__icon item-main-guide__icon--01"></div>
-									<h3 class="item-main-guide__title">PILLAR 1: MINDSET MASTERY</h3>
-									<div class="item-main-guide__text">
-										<p>
-											Master your mind or it will master you. We reprogram the
-								limiting beliefs keeping you broke and install the millionaire
-								mindset that ALL successful people have achieved.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="main-guide__item item-main-guide" data-fls-anim-clouds="">
-								<div class="item-main-guide__inner">
-									<div class="item-main-guide__icon item-main-guide__icon--01"></div>
-									<h3 class="item-main-guide__title">PILLAR 1: MINDSET MASTERY</h3>
-									<div class="item-main-guide__text">
-										<p>
-											Master your mind or it will master you. We reprogram the
-								limiting beliefs keeping you broke and install the millionaire
-								mindset that ALL successful people have achieved.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="main-guide__item item-main-guide" data-fls-anim-clouds="">
-								<div class="item-main-guide__inner">
-									<div class="item-main-guide__icon item-main-guide__icon--01"></div>
-									<h3 class="item-main-guide__title">PILLAR 1: MINDSET MASTERY</h3>
-									<div class="item-main-guide__text">
-										<p>
-											Master your mind or it will master you. We reprogram the
-								limiting beliefs keeping you broke and install the millionaire
-								mindset that ALL successful people have achieved.
-										</p>
-									</div>
-								</div>
-							</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-02-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-02-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-02" src="./assets/img/create/ai-model-02.webp">
+							</picture>
 						</div>
-						<div class="main-guide__box">
-							<button class="main-guide__button button" data-fls-button="">get access now</button>
-							<div class="main-guide__student">
-								<div class="main-guide__student-users">
-									<div class="main-guide__student-user main-guide__student-user--01"></div>
-									<div class="main-guide__student-user main-guide__student-user--02"></div>
-									<div class="main-guide__student-user main-guide__student-user--03"></div>
-								</div>
-								<p class="main-guide__student-text">
-									Join Over
-									<span class="main-guide__student-text--strong">300+</span>
-									Students
-						Worldwide
-								</p>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-03-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-03-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-03" src="./assets/img/create/ai-model-03.webp">
+							</picture>
+						</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-04-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-04-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-04" src="./assets/img/create/ai-model-04.webp">
+							</picture>
+						</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-05-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-05-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-05" src="./assets/img/create/ai-model-05.webp">
+							</picture>
+						</div>
+					</div>
+					<div class="create__marquee" data-fls-marquee="" data-fls-marquee-direction="right" data-fls-marquee-speed="850">
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-01-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-01-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-01" src="./assets/img/create/ai-model-01.webp">
+							</picture>
+						</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-02-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-02-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-02" src="./assets/img/create/ai-model-02.webp">
+							</picture>
+						</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-03-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-03-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-03" src="./assets/img/create/ai-model-03.webp">
+							</picture>
+						</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-04-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-04-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-04" src="./assets/img/create/ai-model-04.webp">
+							</picture>
+						</div>
+						<div class="create__image">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-05-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-05-1200.webp" type="image/webp">
+								<img class="create__picture" alt="ai-model-05" src="./assets/img/create/ai-model-05.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="how">
+					<div class="how__container">
+						<h2 class="how__title">Как устроен заработок на AI-моделях?</h2>
+						<p class="how__text">Все просто.</p>
+						<div class="how__inner">
+							<ul class="how__items">
+								<li class="how__item">
+									<div class="how__item-text">
+										<p>Создаёшь цифровую модель через нашу специальную программу.</p>
+									</div>
+								</li>
+								<li class="how__item">
+									<div class="how__item-text">
+										<p>
+											Прокачиваешь её соцсети. (Мы дадим тебе полную стратегию по
+								органическому трафику)
+										</p>
+									</div>
+								</li>
+								<li class="how__item">
+									<div class="how__item-text">
+										<p>
+											Люди сами будут переходить на нашу платформу монетизации →
+								оформлять платную подписку на твою Ai-модель → также ты
+								дополнительно зарабатываешь через переписку с ними.
+										</p>
+									</div>
+								</li>
+								<li class="how__item">
+									<div class="how__item-text">
+										<p>Выводишь деньги на карту или в крипто кошелек!</p>
+									</div>
+								</li>
+							</ul>
+							<div class="how__image">
+								<img class="how__picture" src="assets/img/how/01.webp" alt="заработок на AI-моделях">
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="prices scroll-04" data-fls-watcher="navigator">
+				<section class="whynow">
+					<div class="whynow__container">
+						<div class="whynow__top-box">
+							<h2 class="whynow__title">Ты заходишь в момент, когда рынок только рождается.</h2>
+							<p class="whynow__text">Почему именно сейчас???</p>
+						</div>
+						<ul class="whynow__items">
+							<li class="whynow__item item-whynow">
+								<div class="item-whynow__text">
+									<p>Сегодня это новое направление.</p>
+								</div>
+							</li>
+							<li class="whynow__item item-whynow">
+								<div class="item-whynow__text">
+									<p>Конкуренции почти нет.</p>
+								</div>
+							</li>
+							<li class="whynow__item item-whynow">
+								<div class="item-whynow__text">
+									<p>Вложения минимальные (до $50 на старте).</p>
+								</div>
+							</li>
+							<li class="whynow__item item-whynow">
+								<div class="item-whynow__text">
+									<p>Ты можешь начать уже сейчас, так как нужен только ноутбук и
+							браузер.</p>
+								</div>
+							</li>
+							<li class="whynow__item item-whynow">
+								<div class="item-whynow__text">
+									<p>⚡️ Через полгода всё будет по-другому:</p>
+									<p>Конкуренция вырастет.</p>
+									<p>Затраты на продвижение увеличатся в 10 раз.</p>
+									<p>
+										Те, кто зашёл раньше, уже займут места и как всегда будут собирать
+							сливки.
+									</p>
+								</div>
+							</li>
+						</ul>
+						<div class="whynow__text-motiv">
+							<p>
+								👉 У тебя есть шанс оказаться в числе первых. Потом вход будет дороже
+					и сложнее.
+							</p>
+						</div>
+						<a class="whynow__button button" href="#">Начать сейчас →</a>
+					</div>
+				</section>
+				<section class="plan">
+					<div class="plan__container">
+						<h2 class="plan__title">Твой план на (60 дней) 🚀</h2>
+						<div class="plan__items">
+							<div class="plan__item item-plan">
+								<div class="item-plan__inner">
+									<h4 class="item-plan__title">Фаза 1 — Создание</h4>
+									<div class="item-plan__text">
+										<p>
+											За первые 3 дня создаёшь свою первую AI-модель. Мы даем
+								пошаговый алгоритм — результат виден сразу.
+										</p>
+									</div>
+								</div>
+								<div class="item-plan__image">
+									<img class="item-plan__picture" src="assets/img/plan/01.jpg" alt="Image">
+								</div>
+							</div>
+							<div class="plan__item item-plan item-plan--reverse">
+								<div class="item-plan__inner">
+									<h4 class="item-plan__title">Фаза 2 — Контент</h4>
+									<div class="item-plan__text">
+										<p>
+											Запускаешь Instagram + Threads, подключаешь систему постов. К
+								2-й неделе у тебя уже идут охваты и первые подписчики.
+										</p>
+									</div>
+								</div>
+								<div class="item-plan__image">
+									<img class="item-plan__picture" src="assets/img/plan/02.jpg" alt="Image">
+								</div>
+							</div>
+							<div class="plan__item item-plan">
+								<div class="item-plan__inner">
+									<h4 class="item-plan__title">Фаза 3 — Монетизация</h4>
+									<div class="item-plan__text">
+										<p>
+											Подключаем платформу, показываю, как переписка превращается в
+								оплату. К концу месяца реально выйти на $200 - $1000.
+										</p>
+									</div>
+								</div>
+								<div class="item-plan__image">
+									<img class="item-plan__picture" src="assets/img/plan/03.jpg" alt="Image">
+								</div>
+							</div>
+							<div class="plan__item item-plan item-plan--reverse">
+								<div class="item-plan__inner">
+									<h4 class="item-plan__title">Фаза 4 — Масштаб</h4>
+									<div class="item-plan__text">
+										<p>
+											Делегируешь переписку, запускаешь вторую модель, строишь
+								систему. К концу второго месяца можно выйти на $5.000– $10.000.
+										</p>
+									</div>
+								</div>
+								<div class="item-plan__image">
+									<img class="item-plan__picture" src="assets/img/plan/04.jpg" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="item-plan__text">
+							<p>
+								Реальные первые результаты видны уже в первые дни. Первые деньги — к
+					концу месяца.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="teach">
+					<div class="teach__container">
+						<h2 class="teach__title">Что внутри обучения</h2>
+						<div class="teach__inner">
+							<div class="teach__blocks blocks-teach">
+								<h3 class="blocks-teach__subtitle">8 блоков, которые ведут тебя от нуля до первых денег:</h3>
+								<ul class="blocks-teach__items">
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">1. Как устроена бизнес-модель.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">2. Создание AI-модели.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">3. Образ и вайб.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">4. Контент и охваты.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">5. Переписка и удержание.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">6. Монетизация и платформа.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">7. Деньги и вывод средств.</p>
+									</li>
+									<li class="blocks-teach__item">
+										<p class="blocks-teach__text">8. Масштабирование.</p>
+									</li>
+								</ul>
+							</div>
+							<div class="teach__bonuses bonuse-teach">
+								<h3 class="bonuse-teach__subtitle">Бонусы</h3>
+								<ul class="bonuse-teach__items">
+									<li class="bonuse-teach__item">
+										<p class="bonuse-teach__text">• Мои личные промпты.</p>
+									</li>
+									<li class="bonuse-teach__item">
+										<p class="bonuse-teach__text">• Шаблоны постов.</p>
+									</li>
+									<li class="bonuse-teach__item">
+										<p class="bonuse-teach__text">• Примеры удачных аккаунтов.</p>
+									</li>
+									<li class="bonuse-teach__item">
+										<p class="bonuse-teach__text">• Список сервисов.</p>
+									</li>
+									<li class="bonuse-teach__item">
+										<p class="bonuse-teach__text">• Закрытое сообщество.</p>
+									</li>
+									<li class="bonuse-teach__item">
+										<p class="bonuse-teach__text">• Прямой контакт со мной.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="teach__text" data-fls-dynamic=".teach__inner,768,1,.teach__container">
+							<p>
+								В СНГ об этом ещё никто не рассказывает. Это абсолютно новый рынок, и
+					ты можешь стать одним из первых.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="prices">
 					<div class="prices__container">
-						<div class="prices__box" data-fls-anim-clouds="">
-							<h2 class="prices__title">
-								Here's
-								<span class="prices__title--underline">Everything</span>
-								You
-					Get With SCALE 2.0
-							</h2>
-							<div class="prices__text">
-								<p>
-									Up until a few months ago, creating Successful Digital Products was
-						only for those who already had years of expertise in a specific
-						topic.
-								</p>
+						<h2 class="prices__title">Тарифы (3 уровня)</h2>
+						<div class="prices__items">
+							<div class="prices__item item-prices">
+								<h4 class="item-prices__title">
+									Базовый
+									<div class="item-prices__title--price">200–250€</div>
+								</h4>
+								<ul class="item-prices__list">
+									<li class="item-prices__list-item">
+										<p>• Полное обучение.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Пошаговая система.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Все материалы.</p>
+									</li>
+								</ul>
+								<a class="item-prices__button button" href="#">Выбрать тариф</a>
 							</div>
-							<div class="prices__decor"></div>
+							<div class="prices__item item-prices item-prices--standard">
+								<h4 class="item-prices__title">
+									Стандарт
+									<div class="item-prices__title--price">400€</div>
+								</h4>
+								<ul class="item-prices__list">
+									<li class="item-prices__list-item">
+										<p>• Всё из базового.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Чат с кураторами.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Постоянные обновления.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Закрытое комьюнити.</p>
+									</li>
+								</ul>
+								<a class="item-prices__button button" href="#">Выбрать тариф</a>
+							</div>
+							<div class="prices__item item-prices item-prices--vip">
+								<h4 class="item-prices__title">
+									VIP
+									<div class="item-prices__title--price">1000€+</div>
+								</h4>
+								<ul class="item-prices__list">
+									<li class="item-prices__list-item">
+										<p>• Всё из стандарта.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Личное ведение от меня.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Создание модели под ключ.</p>
+									</li>
+									<li class="item-prices__list-item">
+										<p>• Приоритетная поддержка.</p>
+									</li>
+								</ul>
+								<a class="item-prices__button button" href="#">Выбрать тариф</a>
+							</div>
 						</div>
-						<div class="prices__border" data-fls-anim-clouds="">
-							<div class="prices__inner">
-								<div class="prices__list list-prices">
-									<p class="list-prices__title">
-										Scale
-										<span class="list-prices__title--accent">2.0</span>
-									</p>
-									<ul class="list-prices__items">
-										<li class="list-prices__item">
-											<p class="list-prices__text">
-												<span class="list-prices__text--strong">Scale 2.0</span>
-												Complete Training
-											</p>
-											<div class="list-prices__underline"></div>
-											<div class="list-prices__old-price">$20,000</div>
-										</li>
-										<li class="list-prices__item">
-											<p class="list-prices__text">
-												The
-												<span class="list-prices__text--strong">Outreach Bible</span>
-											</p>
-											<div class="list-prices__underline"></div>
-											<div class="list-prices__old-price">$6,000</div>
-										</li>
-										<li class="list-prices__item">
-											<p class="list-prices__text">
-												<span class="list-prices__text--strong">LinkedIn & Cold Calling</span>
-												Scripts
-											</p>
-											<div class="list-prices__underline"></div>
-											<div class="list-prices__old-price">$4,000</div>
-										</li>
-										<li class="list-prices__item">
-											<p class="list-prices__text">
-												<span class="list-prices__text--strong">One-On-One</span>
-												Onboarding Call
-											</p>
-											<div class="list-prices__underline"></div>
-											<div class="list-prices__old-price">$2,000</div>
-										</li>
-										<li class="list-prices__item">
-											<p class="list-prices__text">
-												Contract
-												<span class="list-prices__text--strong">Templates & Resources</span>
-											</p>
-											<div class="list-prices__underline"></div>
-											<div class="list-prices__old-price">$1,000</div>
-										</li>
-										<li class="list-prices__item">
-											<p class="list-prices__text">
-												<span class="list-prices__text--strong">Private</span>
-												Boardroom Community
-											</p>
-											<div class="list-prices__underline"></div>
-											<div class="list-prices__old-price">Priceless</div>
-										</li>
-									</ul>
-								</div>
-								<div class="prices__total total-price">
-									<p class="total-price__text-old">
-										Total real world value:
-										<span class="total-price__price-old">$20,000</span>
-									</p>
-									<div class="total-price__text-current">
-										<p>Today's price just:</p>
-										<span class="total-price__current-price">$997.00</span>
-									</div>
-									<button class="button" data-fls-button="">Claim your spot</button>
-									<div class="total-price__text">
-										<p>
-											You'll be redirected to the checkout page on Whop to complete
-								your payment.
-										</p>
-									</div>
-								</div>
+						<div class="prices__text">
+							<p>
+								Не нужен опыт, не нужно лицо, не нужны знания программирования. Всё по
+					шагам и на простом языке.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="rewiews">
+					<div class="rewiews__container">
+						<h2 class="rewiews__title">Результаты и отзывы</h2>
+					</div>
+					<div class="rewiews__inner">
+						<div class="create__marquee" data-fls-marquee="">
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-01-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-01-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-01" src="./assets/img/create/ai-model-01.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-02-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-02-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-02" src="./assets/img/create/ai-model-02.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-03-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-03-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-03" src="./assets/img/create/ai-model-03.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-04-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-04-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-04" src="./assets/img/create/ai-model-04.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-05-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-05-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-05" src="./assets/img/create/ai-model-05.webp">
+								</picture>
+							</div>
+						</div>
+						<div class="create__marquee" data-fls-marquee="" data-fls-marquee-direction="right" data-fls-marquee-speed="850">
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-01-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-01-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-01" src="./assets/img/create/ai-model-01.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-02-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-02-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-02" src="./assets/img/create/ai-model-02.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-03-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-03-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-03" src="./assets/img/create/ai-model-03.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-04-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-04-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-04" src="./assets/img/create/ai-model-04.webp">
+								</picture>
+							</div>
+							<div class="create__image">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-05-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-05-1200.webp" type="image/webp">
+									<img class="create__picture" alt="ai-model-05" src="./assets/img/create/ai-model-05.webp">
+								</picture>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="questions scroll-05" data-fls-watcher="navigator">
+				<section class="questions">
 					<div class="questions__container">
-						<div class="questions__box" data-fls-anim-clouds="">
-							<h2 class="questions__title">
-								<span class="questions__title--underline">FREQUENTLY</span>
-								ASKED
-					QUESTIONS
-							</h2>
-							<div class="questions__text">
-								<p>Answers to our most asked questions</p>
-							</div>
-						</div>
-						<div data-fls-spollers="" class="spollers" data-fls-anim-clouds="">
+						<h2 class="questions__title">частые вопросы</h2>
+						<div data-fls-spollers="" class="spollers">
 							<details class="spollers__item">
-								<summary class="spollers__title">What if I don't have any business experience?</summary>
+								<summary class="spollers__title">А если я без опыта?</summary>
 								<div class="spollers__body">
-									Perfect. You won't have bad habits to unlearn. Some of our most
-						successful students started with zero experience and got results
-						faster than people with "experience."
+									<p>Всё пошагово, даже новичок справится.</p>
 								</div>
 							</details>
 							<details class="spollers__item">
-								<summary class="spollers__title">What if I don't have any business experience?</summary>
+								<summary class="spollers__title">Сколько времени в день?</summary>
+								<div class="spollers__body">2–3 часа. Можно совмещать с работой.</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title">А если конкуренция?</summary>
 								<div class="spollers__body">
-									Perfect. You won't have bad habits to unlearn. Some of our most
-						successful students started with zero experience and got results
-						faster than people with "experience."
+									<p>Направление только зарождается. В СНГ его почти нет.</p>
 								</div>
 							</details>
 							<details class="spollers__item">
-								<summary class="spollers__title">What if I don't have any business experience?</summary>
+								<summary class="spollers__title">А если я не технарь?</summary>
 								<div class="spollers__body">
-									Perfect. You won't have bad habits to unlearn. Some of our most
-						successful students started with zero experience and got results
-						faster than people with "experience."
+									<p>Нужен только ноутбук и браузер.</p>
 								</div>
 							</details>
 							<details class="spollers__item">
-								<summary class="spollers__title">What if I don't have any business experience?</summary>
+								<summary class="spollers__title">Сколько можно заработать?</summary>
 								<div class="spollers__body">
-									Perfect. You won't have bad habits to unlearn. Some of our most
-						successful students started with zero experience and got results
-						faster than people with "experience."
-								</div>
-							</details>
-							<details class="spollers__item">
-								<summary class="spollers__title">What if I don't have any business experience?</summary>
-								<div class="spollers__body">
-									Perfect. You won't have bad habits to unlearn. Some of our most
-						successful students started with zero experience and got results
-						faster than people with "experience."
-								</div>
-							</details>
-							<details class="spollers__item">
-								<summary class="spollers__title">What if I don't have any business experience?</summary>
-								<div class="spollers__body">
-									Perfect. You won't have bad habits to unlearn. Some of our most
-						successful students started with zero experience and got results
-						faster than people with "experience."
+									<p>
+										От первых $200–300 за неделю до роста в тысячи. Всё зависит от
+							твоих действий.
+									</p>
 								</div>
 							</details>
 						</div>
+						<div class="questions__text">
+							<p>
+								Для тех, кто хочет стартовать ещё быстрее — доступны готовые прогретые
+					аккаунты Instagram и Threads (за отдельную плату).
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="fast">
+					<div class="fast__container">
+						<h2 class="fast__title">Финальный блок (срочность)</h2>
+						<div class="fast__text">
+							<p>
+								Цена сейчас:
+								<span class="fast__text--strong">400€ / 39.000₽.</span>
+								Осталось 7
+					мест. Дальше цена вырастет до 500€.
+							</p>
+						</div>
+						<a class="fast__button button" href="#">Забрать место 💰</a>
 					</div>
 				</section>
 			</main>
