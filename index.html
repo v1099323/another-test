@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -15,8 +15,8 @@
 		<link rel="preload" href="./assets/fonts/Satoshi-Black-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1759672794895"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759672794895">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1759736679120"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759736679120">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -59,7 +59,7 @@
 						</nav>
 					</div>
 					<!--
-<fetch url="@components/layout/menu/menu.js?v=1759672794895on">
+<fetch url="@components/layout/menu/menu.js?v=1759736679120on">
 <each loop='item in response'>
 </each>
 </fetch>
@@ -67,10 +67,10 @@
 					<!-- О программе | Как работает | Тарифы | Отзывы | FAQ | Оплатить -->
 				</div>
 			</header>
-			<main class="page page--home">
+			<main class="page page--home" data-fls-gsap="">
 				<section class="hero">
-					<div class="hero__container">
-						<div class="hero__player">
+					<div class="hero__container" data-fls-parallax-parent="" data-fls-watcher="" data-fls-watcher-once="">
+						<div class="hero__player" data-fls-parallax="" data-fls-parallax-direction="-0.8">
 							<div class="hero__player-border">
 								<video class="hero__video" src="./assets/img/hero/hero-video.mp4" autoplay loop muted></video>
 								<div class="hero__volume-up-container">
@@ -79,20 +79,19 @@
 							</div>
 						</div>
 						<div class="hero__inner">
-							<h1 class="hero__title sr-only"></h1>
-							<blockquote class="hero__blockquote">
-								Это первое обучение в СНГ по AI-моделям. Такого направления ещё никто
-					не показывал. Конкуренции нет. Я покажу, как с нуля создать систему,
-					которая работает на тебя каждый день — даже если у тебя нет опыта,
-					команды или больших вложений.
+							<h1 class="hero__title sr-only">Система заработка на AI — старт без опыта</h1>
+							<blockquote class="hero__blockquote" data-fls-parallax="" data-fls-parallax-direction="-0.6">
+								Первое обучение в СНГ по AI-моделям. Никто ещё не показывал это
+					направление. Конкуренции нет. Я покажу, как запустить систему, которая
+					зарабатывает для тебя каждый день — без опыта и больших вложений.
 							</blockquote>
 						</div>
-						<button class="hero__button button" data-fls-button="">Хочу систему</button>
+						<button class="hero__button button" data-fls-button="" data-fls-parallax="" data-fls-parallax-direction="-0.5">Хочу систему</button>
 					</div>
 				</section>
 				<section class="create">
 					<div class="create__container">
-						<h2 class="create__title">
+						<h2 class="create__title" data-fls-splittype="" data-fls-anim-clouds="">
 							Пока весь рынок только спорит про AI — я создал систему, которая
 				приносит деньги каждый день.
 						</h2>
@@ -101,44 +100,7 @@
 				тысячи долларов. Достаточно ноутбука и браузера.
 						</h3>
 					</div>
-					<div class="create__marquee" data-fls-marquee="">
-						<div class="create__image">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-01-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-01-1200.webp" type="image/webp">
-								<img class="create__picture" alt="ai-model-01" src="./assets/img/create/ai-model-01.webp">
-							</picture>
-						</div>
-						<div class="create__image">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-02-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-02-1200.webp" type="image/webp">
-								<img class="create__picture" alt="ai-model-02" src="./assets/img/create/ai-model-02.webp">
-							</picture>
-						</div>
-						<div class="create__image">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-03-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-03-1200.webp" type="image/webp">
-								<img class="create__picture" alt="ai-model-03" src="./assets/img/create/ai-model-03.webp">
-							</picture>
-						</div>
-						<div class="create__image">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-04-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-04-1200.webp" type="image/webp">
-								<img class="create__picture" alt="ai-model-04" src="./assets/img/create/ai-model-04.webp">
-							</picture>
-						</div>
-						<div class="create__image">
-							<picture>
-								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-05-600.webp" type="image/webp">
-								<source media="(max-width: 1200px)" srcset="./assets/img/create/ai-model-05-1200.webp" type="image/webp">
-								<img class="create__picture" alt="ai-model-05" src="./assets/img/create/ai-model-05.webp">
-							</picture>
-						</div>
-					</div>
-					<div class="create__marquee" data-fls-marquee="" data-fls-marquee-direction="right" data-fls-marquee-speed="850">
+					<div class="create__marquee" data-fls-marquee="" data-fls-marquee-speed="400">
 						<div class="create__image">
 							<picture>
 								<source media="(max-width: 600px)" srcset="./assets/img/create/ai-model-01-600.webp" type="image/webp">
@@ -178,35 +140,43 @@
 				</section>
 				<section class="how">
 					<div class="how__container">
-						<h2 class="how__title">Как устроен заработок на AI-моделях?</h2>
+						<h2 class="how__title" data-fls-splittype="" data-fls-anim-clouds="">Как устроен заработок на AI-моделях?</h2>
 						<p class="how__text">Все просто.</p>
 						<div class="how__inner">
 							<ul class="how__items">
 								<li class="how__item">
-									<div class="how__item-text">
-										<p>Создаёшь цифровую модель через нашу специальную программу.</p>
+									<div class="how__item-inner">
+										<div class="how__item-text">
+											<p>1. Создаёшь цифровую модель через нашу специальную программу.</p>
+										</div>
 									</div>
 								</li>
 								<li class="how__item">
-									<div class="how__item-text">
-										<p>
-											Прокачиваешь её соцсети. (Мы дадим тебе полную стратегию по
-								органическому трафику)
-										</p>
+									<div class="how__item-inner">
+										<div class="how__item-text">
+											<p>
+												2. Прокачиваешь её соцсети. (Мы дадим тебе полную стратегию по
+									органическому трафику)
+											</p>
+										</div>
 									</div>
 								</li>
 								<li class="how__item">
-									<div class="how__item-text">
-										<p>
-											Люди сами будут переходить на нашу платформу монетизации →
-								оформлять платную подписку на твою Ai-модель → также ты
-								дополнительно зарабатываешь через переписку с ними.
-										</p>
+									<div class="how__item-inner">
+										<div class="how__item-text">
+											<p>
+												3. Люди сами будут переходить на нашу платформу монетизации →
+									оформлять платную подписку на твою Ai-модель → также ты
+									дополнительно зарабатываешь через переписку с ними.
+											</p>
+										</div>
 									</div>
 								</li>
 								<li class="how__item">
-									<div class="how__item-text">
-										<p>Выводишь деньги на карту или в крипто кошелек!</p>
+									<div class="how__item-inner">
+										<div class="how__item-text">
+											<p>4. Выводишь деньги на карту или в крипто кошелек!</p>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -219,58 +189,55 @@
 				<section class="whynow">
 					<div class="whynow__container">
 						<div class="whynow__top-box">
-							<h2 class="whynow__title">Ты заходишь в момент, когда рынок только рождается.</h2>
+							<h2 class="whynow__title" data-fls-splittype="" data-fls-anim-clouds="">Ты заходишь в момент, когда рынок только рождается.</h2>
 							<p class="whynow__text">Почему именно сейчас???</p>
 						</div>
 						<ul class="whynow__items">
 							<li class="whynow__item item-whynow">
-								<div class="item-whynow__text">
-									<p>Сегодня это новое направление.</p>
+								<div class="item-whynow__inner">
+									<div class="item-whynow__text">
+										<p>Сегодня это новое направление.</p>
+									</div>
 								</div>
 							</li>
 							<li class="whynow__item item-whynow">
-								<div class="item-whynow__text">
-									<p>Конкуренции почти нет.</p>
+								<div class="item-whynow__inner">
+									<div class="item-whynow__text">
+										<p>Конкуренции почти нет.</p>
+									</div>
 								</div>
 							</li>
 							<li class="whynow__item item-whynow">
-								<div class="item-whynow__text">
-									<p>Вложения минимальные (до $50 на старте).</p>
+								<div class="item-whynow__inner">
+									<div class="item-whynow__text">
+										<p>Вложения минимальные (до $50 на старте).</p>
+									</div>
 								</div>
 							</li>
 							<li class="whynow__item item-whynow">
-								<div class="item-whynow__text">
-									<p>Ты можешь начать уже сейчас, так как нужен только ноутбук и
-							браузер.</p>
-								</div>
-							</li>
-							<li class="whynow__item item-whynow">
-								<div class="item-whynow__text">
-									<p>⚡️ Через полгода всё будет по-другому:</p>
-									<p>Конкуренция вырастет.</p>
-									<p>Затраты на продвижение увеличатся в 10 раз.</p>
-									<p>
-										Те, кто зашёл раньше, уже займут места и как всегда будут собирать
-							сливки.
-									</p>
+								<div class="item-whynow__inner">
+									<div class="item-whynow__text">
+										<p>Ты можешь начать уже сейчас, так как нужен только ноутбук и
+								браузер.</p>
+									</div>
 								</div>
 							</li>
 						</ul>
+						<a class="whynow__button button" href="#">Начать сейчас →</a>
 						<div class="whynow__text-motiv">
 							<p>
 								👉 У тебя есть шанс оказаться в числе первых. Потом вход будет дороже
 					и сложнее.
 							</p>
 						</div>
-						<a class="whynow__button button" href="#">Начать сейчас →</a>
 					</div>
 				</section>
 				<section class="plan">
 					<div class="plan__container">
-						<h2 class="plan__title">Твой план на (60 дней) 🚀</h2>
+						<h2 class="plan__title" data-fls-splittype="" data-fls-anim-clouds="">Твой план на (60 дней) 🚀</h2>
 						<div class="plan__items">
-							<div class="plan__item item-plan">
-								<div class="item-plan__inner">
+							<div class="plan__item item-plan" data-fls-parallax-parent="">
+								<div class="item-plan__inner" data-fls-parallax="" data-fls-parallax-direction="-0.3">
 									<h4 class="item-plan__title">Фаза 1 — Создание</h4>
 									<div class="item-plan__text">
 										<p>
@@ -279,12 +246,12 @@
 										</p>
 									</div>
 								</div>
-								<div class="item-plan__image">
+								<div class="item-plan__image" data-fls-parallax="">
 									<img class="item-plan__picture" src="assets/img/plan/01.jpg" alt="Image">
 								</div>
 							</div>
-							<div class="plan__item item-plan item-plan--reverse">
-								<div class="item-plan__inner">
+							<div class="plan__item item-plan item-plan--reverse" data-fls-parallax-parent="">
+								<div class="item-plan__inner" data-fls-parallax="" data-fls-parallax-direction="-0.3">
 									<h4 class="item-plan__title">Фаза 2 — Контент</h4>
 									<div class="item-plan__text">
 										<p>
@@ -293,12 +260,12 @@
 										</p>
 									</div>
 								</div>
-								<div class="item-plan__image">
+								<div class="item-plan__image" data-fls-parallax="">
 									<img class="item-plan__picture" src="assets/img/plan/02.jpg" alt="Image">
 								</div>
 							</div>
-							<div class="plan__item item-plan">
-								<div class="item-plan__inner">
+							<div class="plan__item item-plan" data-fls-parallax-parent="">
+								<div class="item-plan__inner" data-fls-parallax="" data-fls-parallax-direction="-0.3">
 									<h4 class="item-plan__title">Фаза 3 — Монетизация</h4>
 									<div class="item-plan__text">
 										<p>
@@ -307,12 +274,12 @@
 										</p>
 									</div>
 								</div>
-								<div class="item-plan__image">
+								<div class="item-plan__image" data-fls-parallax="">
 									<img class="item-plan__picture" src="assets/img/plan/03.jpg" alt="Image">
 								</div>
 							</div>
-							<div class="plan__item item-plan item-plan--reverse">
-								<div class="item-plan__inner">
+							<div class="plan__item item-plan item-plan--reverse" data-fls-parallax-parent="">
+								<div class="item-plan__inner" data-fls-parallax="" data-fls-parallax-direction="-0.3">
 									<h4 class="item-plan__title">Фаза 4 — Масштаб</h4>
 									<div class="item-plan__text">
 										<p>
@@ -321,7 +288,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="item-plan__image">
+								<div class="item-plan__image" data-fls-parallax="">
 									<img class="item-plan__picture" src="assets/img/plan/04.jpg" alt="Image">
 								</div>
 							</div>
@@ -336,34 +303,50 @@
 				</section>
 				<section class="teach">
 					<div class="teach__container">
-						<h2 class="teach__title">Что внутри обучения</h2>
+						<h2 class="teach__title" data-fls-splittype="" data-fls-anim-clouds="">Что внутри обучения</h2>
 						<div class="teach__inner">
 							<div class="teach__blocks blocks-teach">
 								<h3 class="blocks-teach__subtitle">8 блоков, которые ведут тебя от нуля до первых денег:</h3>
 								<ul class="blocks-teach__items">
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">1. Как устроена бизнес-модель.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">1. Как устроена бизнес-модель.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">2. Создание AI-модели.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">2. Создание AI-модели.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">3. Образ и вайб.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">3. Образ и вайб.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">4. Контент и охваты.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">4. Контент и охваты.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">5. Переписка и удержание.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">5. Переписка и удержание.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">6. Монетизация и платформа.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">6. Монетизация и платформа.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">7. Деньги и вывод средств.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">7. Деньги и вывод средств.</p>
+										</div>
 									</li>
 									<li class="blocks-teach__item">
-										<p class="blocks-teach__text">8. Масштабирование.</p>
+										<div class="blocks-teach__inner">
+											<p class="blocks-teach__text">8. Масштабирование.</p>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -371,22 +354,34 @@
 								<h3 class="bonuse-teach__subtitle">Бонусы</h3>
 								<ul class="bonuse-teach__items">
 									<li class="bonuse-teach__item">
-										<p class="bonuse-teach__text">• Мои личные промпты.</p>
+										<div class="bonuse-teach__inner">
+											<p class="bonuse-teach__text">• Мои личные промпты.</p>
+										</div>
 									</li>
 									<li class="bonuse-teach__item">
-										<p class="bonuse-teach__text">• Шаблоны постов.</p>
+										<div class="bonuse-teach__inner">
+											<p class="bonuse-teach__text">• Шаблоны постов.</p>
+										</div>
 									</li>
 									<li class="bonuse-teach__item">
-										<p class="bonuse-teach__text">• Примеры удачных аккаунтов.</p>
+										<div class="bonuse-teach__inner">
+											<p class="bonuse-teach__text">• Примеры удачных аккаунтов.</p>
+										</div>
 									</li>
 									<li class="bonuse-teach__item">
-										<p class="bonuse-teach__text">• Список сервисов.</p>
+										<div class="bonuse-teach__inner">
+											<p class="bonuse-teach__text">• Список сервисов.</p>
+										</div>
 									</li>
 									<li class="bonuse-teach__item">
-										<p class="bonuse-teach__text">• Закрытое сообщество.</p>
+										<div class="bonuse-teach__inner">
+											<p class="bonuse-teach__text">• Закрытое сообщество.</p>
+										</div>
 									</li>
 									<li class="bonuse-teach__item">
-										<p class="bonuse-teach__text">• Прямой контакт со мной.</p>
+										<div class="bonuse-teach__inner">
+											<p class="bonuse-teach__text">• Прямой контакт со мной.</p>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -401,7 +396,7 @@
 				</section>
 				<section class="prices">
 					<div class="prices__container">
-						<h2 class="prices__title">Тарифы (3 уровня)</h2>
+						<h2 class="prices__title" data-fls-splittype="" data-fls-anim-clouds="">Тарифы (3 уровня)</h2>
 						<div class="prices__items">
 							<div class="prices__item item-prices">
 								<h4 class="item-prices__title">
@@ -424,7 +419,7 @@
 							<div class="prices__item item-prices item-prices--standard">
 								<h4 class="item-prices__title">
 									Стандарт
-									<div class="item-prices__title--price">400€</div>
+									<div class="item-prices__title--price">500€</div>
 								</h4>
 								<ul class="item-prices__list">
 									<li class="item-prices__list-item">
@@ -474,7 +469,7 @@
 				</section>
 				<section class="rewiews">
 					<div class="rewiews__container">
-						<h2 class="rewiews__title">Результаты и отзывы</h2>
+						<h2 class="rewiews__title" data-fls-splittype="" data-fls-anim-clouds="">Результаты и отзывы</h2>
 					</div>
 					<div class="rewiews__inner">
 						<div class="create__marquee" data-fls-marquee="">
@@ -555,7 +550,7 @@
 				</section>
 				<section class="questions">
 					<div class="questions__container">
-						<h2 class="questions__title">частые вопросы</h2>
+						<h2 class="questions__title" data-fls-splittype="" data-fls-anim-clouds="">частые вопросы</h2>
 						<div data-fls-spollers="" class="spollers">
 							<details class="spollers__item">
 								<summary class="spollers__title">А если я без опыта?</summary>
@@ -599,16 +594,16 @@
 				</section>
 				<section class="fast">
 					<div class="fast__container">
-						<h2 class="fast__title">Финальный блок (срочность)</h2>
+						<h2 class="fast__title sr-only">Успей занять место</h2>
+						<a class="fast__button button" href="#">Забрать место 💰</a>
 						<div class="fast__text">
 							<p>
 								Цена сейчас:
-								<span class="fast__text--strong">400€ / 39.000₽.</span>
+								<span class="fast__text--strong">500€ / 48.500руб.</span>
 								Осталось 7
-					мест. Дальше цена вырастет до 500€.
+					мест. Дальше цена вырастет до 600€.
 							</p>
 						</div>
-						<a class="fast__button button" href="#">Забрать место 💰</a>
 					</div>
 				</section>
 			</main>
@@ -647,5 +642,6 @@
 				</div>
 			</footer>
 		</div>
+		<!-- Created by ViolettLis -->
 	</body>
 </html>
